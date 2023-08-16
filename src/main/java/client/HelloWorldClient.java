@@ -10,7 +10,7 @@ public class HelloWorldClient {
 		var session = HibernateUtil.getSessionfactory().openSession();
 		session.beginTransaction();
 		
-		var message = new Message("Hello World with Hibernate");
+		var message = new Message("Hello World with Hibernate 2");
 		session.save(message);
 		
 		session.getTransaction().commit();
