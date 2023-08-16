@@ -19,6 +19,8 @@ public class Message {
 	
 	@Column(name="text")
 	private String text;
+	
+	public Message(){};
 
 	public Message(String text) {
 		this.text = text;
@@ -27,6 +29,14 @@ public class Message {
 	@Override
 	public String toString() {
 		return "Message [id=" + id + ", text=" + text + "]";
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	public String getText() {
+		return this.text;
 	}
 	
 }
