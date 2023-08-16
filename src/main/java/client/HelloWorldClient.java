@@ -11,7 +11,11 @@ public class HelloWorldClient {
 		session.beginTransaction();
 		
 		var message = new Message("Hello World with Hibernate 2");
+//		Hibernate 5
 		session.save(message);
+		
+//		Hibernate 6
+//		session.persist(message);
 		
 		session.getTransaction().commit();
 		session.close();
