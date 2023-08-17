@@ -10,7 +10,8 @@ public class DeletingObjectsClient {
 		var transaction = session.getTransaction();
 		try {
 			transaction.begin();
-			var msg = (Message) session.get(Message.class, 1L);
+			UpdatingObjectsClient.main(args);
+			var msg = (Message) session.get(Message.class, 2L);
 			session.delete(msg);
 			transaction.commit();
 		} catch (Exception e) {

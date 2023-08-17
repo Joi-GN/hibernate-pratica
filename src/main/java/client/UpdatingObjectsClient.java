@@ -11,9 +11,10 @@ public class UpdatingObjectsClient {
 		try {
 //			begin transaction
 			transaction.begin();
+			HelloWorldClient.main(args);
 			
-//			The get method retrieves the message using the id provided as the parameter value (2L)
-			var msg = (Message) session.get(Message.class, 2L);
+//			The get method retrieves the message using the id provided as the parameter value (1L)
+			var msg = (Message) session.get(Message.class, 1L);
 			
 //			Updating the message entity with the new string text passed as the parameter
 			msg.setText("Automatic Dirty Checking");
