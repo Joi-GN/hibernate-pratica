@@ -28,6 +28,7 @@
 
 		<!--ANNOTATION-BASED MAPPING-->
 		<mapping class="entity.Message"/>
+		<mapping class="entity.Person"/>
 		
 	</session-factory>
 </hibernate-configuration>
